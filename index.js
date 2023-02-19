@@ -55,7 +55,9 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, answers) {
-   
+    const filePath = `./README/${fileName}`;
+    fs. writeFile(fileName, answers, (err) => err ? console.log(err) : console.log('File successfully written!')
+    );
 };
 
 // function to initialize program
