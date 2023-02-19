@@ -29,7 +29,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license does your project use?',
-        choices: ['MIT', 'GNU GPLv3', 'Apache License 2.0', 'ISC']
+        choices: ['MIT', 'GNU GPL 3.0', 'Apache 2.0', 'ISC', 'Unlicense']
     },
     {
         type: 'input',
@@ -56,20 +56,20 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, answers) {
     const filePath = `./README/${fileName}`;
-    fs. writeFile(fileName, answers, (err) => err ? console.log(err) : console.log('File successfully written!')
+    fs.writeFile(filePath, answers, (err) => err ? console.log(err) : console.log('File successfully written!')
     );
 };
 
 // function to initialize program
 function init() {
     inquirer.prompt(questions)
-    .then(answers => {
-        const readmeContent = generateMarkdown(answers);
-        writeToFile('README.md', readmeContent);
-    })
-    .catch(error => {
-        console.log(error);
-    })
+        .then(answers => {
+            const readmeContent = generateMarkdown(answers);
+            writeToFile('README.md', readmeContent);
+        })
+        .catch(error => {
+            console.log(error);
+        })
 }
 
 // function call to initialize program
