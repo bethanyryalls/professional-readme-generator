@@ -54,12 +54,20 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+function writeToFile(fileName, answers) {
+   
+};
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions)
+    .then(answers => {
+        const readmeContent = generateMarkdown(answers);
+        writeToFile('README.md', readmeContent);
+    })
+    .catch(error => {
+        console.log(error);
+    })
 }
 
 // function call to initialize program
