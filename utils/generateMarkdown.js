@@ -20,9 +20,7 @@ const renderLicenseBadge = license => {
 }
 // set licenseBadge to the url of license chosen
 const licenseBadge = renderLicenseBadge(answers.license);
-  return `
-  
-  # ${answers.title}
+  return `# ${answers.title}
 
   ${licenseBadge}
 
