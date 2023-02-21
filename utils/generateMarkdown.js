@@ -1,6 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
 
+  // function with switch statement to give license badge urls
 const renderLicenseBadge = license => {
   switch (license) {
       case 'MIT':
@@ -17,6 +18,7 @@ const renderLicenseBadge = license => {
               return '';
   }
 }
+// set licenseBadge to the url of license chosen
 const licenseBadge = renderLicenseBadge(answers.license);
   return `
   

@@ -55,18 +55,24 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, answers) {
+    // put file in README folder
     const filePath = `./README/${fileName}`;
+    // if there is an error, log that error otherwise 'success'
     fs.writeFile(filePath, answers, (err) => err ? console.log(err) : console.log('File successfully written!')
     );
 };
 
 // function to initialize program
 function init() {
+    // ask questions
     inquirer.prompt(questions)
         .then(answers => {
+            // content is answers
             const readmeContent = generateMarkdown(answers);
+            //run write function using content and file name
             writeToFile('README.md', readmeContent);
         })
+        // if error, log it
         .catch(error => {
             console.log(error);
         })
