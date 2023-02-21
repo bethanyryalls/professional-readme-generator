@@ -1,12 +1,12 @@
 
   
-  # t
+  # README Generator
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   ## Description
 
-  t
+  A simple README file generator created using the command line.
 
   ## Table of Contents
 
@@ -19,24 +19,24 @@
 
   ## Installation
 
-  t
+  To intsall the necessary dependencies, run the following command: ``` npm install ```
 
   ## Usage
 
-  t
+  You can use the application by running ` node index.js`
 
   ## License
 
-  This project is licensed under the MIT license.
+  This project is licensed under the GNU GPL 3.0 license.
 
   ## Contributing
 
-  t
+  Fork and pull request.
 
   ## Tests
 
-  t
+  To run tests, run the following command: ``` npm test ```
 
   ## Questions
 
-  If you have any questions about the repo, open an issue or contact me directly at t. You can find more of my work at [t](https://github.com/t).
+  If you have any questions about the repo, open an issue or contact me directly at bethany@motifdesignstudio.com. You can find more of my work at [bethanyryalls](https://github.com/bethanyryalls).
