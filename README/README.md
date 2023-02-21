@@ -19,11 +19,11 @@
 
   ## Installation
 
-  To intsall the necessary dependencies, run the following command: ``` npm install ```
+  To install the necessary dependencies, run the following command: ``` npm install ```
 
   ## Usage
 
-  You can use the application by running ` node index.js`
+  You can use this application by running `node index.js`
 
   ## License
 

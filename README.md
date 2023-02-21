@@ -10,7 +10,7 @@ The criteria for this project:
 - When a user enters their email address, it's added to the section entitled Questions, with instructions on how to reach them
 - When a user clicks on the links in the Table of Contents, they are taken to the corresponding section of the README.md
 
-To view the video walkthrough, [please click this link.](https://drive.google.com/file/d/1Xmf8g_djTpA5Je46PdWPaT6tYsAialdd/view)
+To view the video walkthrough, [please click this link.](https://drive.google.com/file/d/18gWyh2JXg2TPzVgPPVmJMVh4cnxfBeEA/view)
 
 ## Table of Contents
 - [Installation/Usage](#installationusage)
@@ -18,12 +18,34 @@ To view the video walkthrough, [please click this link.](https://drive.google.co
 - [License](#license)
 - [Technologies](#technologies)
 - [Resources](#resources)
+- [Walkthrough](#walkthrough)
 
 ## Installation/Usage
 
 ### Screenshot
 The following screenshot shows the terminal with prompted Questions and given answers.
-![Professional ReadMe Generator Application by Bethany Ryalls]()
+![Professional ReadMe Generator Application by Bethany Ryalls](./images/professional-readme-generator-command-line.png)
 
+### The Generated README.md
+- Navigate to the main page of the repository
+- Open the 'README' folder
+- Inside you'll find the generated README.md file
 
-https://drive.google.com/file/d/1Xmf8g_djTpA5Je46PdWPaT6tYsAialdd/view
+### Developers
+1. Navigate to the main page of the repository
+2. Click the green 'Code' button and copy the SSH or HTTPS key
+3. In the terminal (Mac) or Git Bash (Windows) clone into the directory you want the repo in using the 'git clone' command followed by pasting your SSH or HTTPS key
+4. Open the directory in your code editor
+5. Inspect the index.js and generateMarkdown.js files to see how it works
+6. To run, use the command: `node index.js`
+
+## Technologies
+- ES6
+- Node.js
+- Inquirer package
+
+## Resources
+- [Inquirer Package](https://www.npmjs.com/package/inquirer)
+
+## Walkthrough
+To view the video walkthrough, [please click this link.](https://drive.google.com/file/d/18gWyh2JXg2TPzVgPPVmJMVh4cnxfBeEA/view)
